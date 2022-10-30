@@ -16,3 +16,17 @@ with open("names.txt") as file:
         names.append(line.rstrip())
 for name in sorted(names):
     print(f"hello,{name}")
+
+
+# sorting in reverse alphabetical order 
+# sorted(iterable,/,*,key-None,reverse=False)
+
+names = []
+# by default open function read the file>
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.rstrip())
+for name in sorted(names,reverse=True):
+    print(f"hello,{name}")
+
+
