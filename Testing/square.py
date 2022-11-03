@@ -4,9 +4,7 @@ def main():
     print("x squared is",square(x))
 
 def square(n):
-    return n*n
+    return n+n
 # This line use import these function without running main function
 if __name__=="__main__":
     main()
-
-
